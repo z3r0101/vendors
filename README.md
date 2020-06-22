@@ -1,10 +1,14 @@
 # What is zr30101
-zr30101 is an open-source rapid development web framework for use in building dynamic web sites with PHP.
+zr30101 is an open-source rapid development web framework for use in building dynamic web sites with content management system written in PHP and paired with a MySQL or MariaDB database
 
 <hr>
 
 ## Server Requirements
-PHP version 5.6 or newer is recommended.
+<ul>
+<li>PHP version 5.6 or newer is recommended.</li>
+<li>MySQL version 5.5 or newer is recommended.</li>
+<li>MariaDB version 10 or newer is recommended.</li>
+</ul>  
 
 ## Installation
 
