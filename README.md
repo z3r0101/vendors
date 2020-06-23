@@ -12,6 +12,19 @@ zr30101 is an open-source rapid development web framework for use in building dy
 
 ## Installation
 
+### Using shell script
+1. Download http://z3r0101.com/downloads/z3r0101.ssh
+2. Copy the z3r0101.ssh to your www root directory (E.g. /var/www)
+3. Make it executable
+```
+# chmod +x z3r0101.ssh
+```
+4. Syntax: ./z3r0101.ssh [create|remove] [website name]
+```
+E.g.
+# ./z3r0101.ssh create website-sample
+```
+
 ### Manual steps:
 <ol>
   <li>Create a website directory</li>
@@ -46,7 +59,10 @@ zr30101 is an open-source rapid development web framework for use in building dy
     Run the clone command:<br>git clone https://github.com/z3r0101/vendors.git .
   </li>
   <li>The www directory will be your working web files directory<br>
-    You can download web project samples in http://z3r0101.com
+    Available project sample:
+    <ul>
+      <li><a href="https://github.com/z3r0101/www-content">https://github.com/z3r0101/www-content</a></li>
+    </ul>  
   </li>
 </ol>
 
@@ -54,7 +70,7 @@ zr30101 is an open-source rapid development web framework for use in building dy
 <table>
   <tr>
     <td width="50%"><ul><li>application</li></ul></td>
-    <td width="50%" valign="top">z3r0101 framework core files</td>
+    <td width="50%" valign="top">This folder contains the framework core files. It is not advised to make changes in this directory or put your own application code into this directory.</td>
   </tr>  
   <tr>
     <td><ul><li>vendors</li></ul></td>
