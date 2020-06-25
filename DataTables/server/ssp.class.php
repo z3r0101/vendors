@@ -317,25 +317,13 @@ class SSP {
 		 * Output
 		 */
 
-		include_once($pAppPath."classes/cryptonite.php");
-
-		$crypt = new cmsCryptonite();
-
-		$arrCMSDTInfo = array(
-			'request'=>$request,
-			'filter'=>$crypt->encrypt($where),
-			'order'=>$crypt->encrypt($order)
-		);
-
 		return array(
 			"draw"            => isset ( $request['draw'] ) ?
 				intval( $request['draw'] ) :
 				0,
 			"recordsTotal"    => intval( $recordsTotal ),
 			"recordsFiltered" => intval( $recordsFiltered ),
-			"data"            => self::data_output( $columns, $data ),
-            "cms_dt_info" => $arrCMSDTInfo,
-			"debug"=>$dataSQL
+			"data"            => self::data_output( $columns, $data )
 		);
 	}
 
